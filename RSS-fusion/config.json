@@ -9,7 +9,7 @@
   "boot": "auto",
   "init": false,
   "webui": "http://[HOST]:[PORT:8844]",
-  "image": "rook1e404/fusion:latest"，
+  "image": "rook1e404/fusion:latest",
   "ports": {
     "8844/tcp": 8080
   },
