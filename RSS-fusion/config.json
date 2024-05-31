@@ -8,10 +8,10 @@
   "startup": "application",
   "boot": "auto",
   "init": false,
-  "webui": "http://[HOST]:[PORT:8044]",
+  "webui": "http://[HOST]:[PORT:8080]",
   "image": "rook1e404/fusion",
   "ports": {
-    "8044/tcp": 8080
+    "8080/tcp": 8080
   },
   "map": {
     "config": {
