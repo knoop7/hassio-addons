@@ -1,0 +1,23 @@
+{
+  "name": "Sherpa-OnnxAsr",
+  "version": "1.0",
+  "slug": "Sherpa-OnnxAsr",
+  "description": "本地离线语音模型 占用1GB",
+  "url": "https://github.com/yaming116",
+  "arch": ["amd64", "aarch64"],
+  "startup": "application",
+  "boot": "auto",
+  "init": false,
+  "webui": "http://[HOST]:[PORT:5001]",
+  "image": "hub.uuuadc.top/yaming116/sherpa-onnx-asr",
+  "ports": {
+    "5001/tcp": 5001
+  },
+  "map": {
+    "config": {
+      "path": "/data",
+      "readonly": false
+    }
+  },
+  "environment": {}
+}
