@@ -1,6 +1,6 @@
 {
   "name": "Sherpa-OnnxAsr",
-  "version": "latest",
+  "version": "paraformer-2024-6-30",
   "slug": "Sherpa-OnnxAsr",
   "description": "本地离线语音模型 占用1GB",
   "url": "https://github.com/yaming116",
