@@ -2,7 +2,7 @@
 name: go2rtc
 description: Hardware transcoding for Intel (VAAPI) and Raspberry (V4L2)
 url: https://github.com/AlexxIT/go2rtc
-image: docker.ckyl.me/alexxit/go2rtc
+image: docker.chenby.cn/alexxit/go2rtc
 arch: [ amd64, aarch64, i386, armv7 ]
 
 # https://developers.home-assistant.io/docs/add-ons/configuration
