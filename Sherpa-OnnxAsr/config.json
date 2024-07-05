@@ -21,25 +21,9 @@
   },
   "environment": {},
   "options": {
-    "model_path": {
-      "description": "模型文件路径(如果不不明白，请勿修改）",
-      "type": "string",
-      "default": "/data/model.onnx"
-    },
-    "sample_rate": {
-      "description": "音频采样率",
-      "type": "integer",
-      "default": 16000
-    },
-    "language": {
-      "description": "语言选择",
-      "type": "string",
-      "default": "zh-CN"
-    }
+    "language": "zh-CN"
   },
   "schema": {
-    "model_path": "str",
-    "sample_rate": "int",
-    "language": "str"
+    "language": "zh-CN"
   }
 }
