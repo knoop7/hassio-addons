@@ -24,6 +24,6 @@
     "language": "zh-CN"
   },
   "schema": {
-    "language": "zh-CN"
+    "language": "str"
   }
 }
