@@ -25,5 +25,7 @@
   },
   "schema": {
     "language": "str"
-  }
+  },
+  "ingress": true,
+  "ingress_stream": true
 }
