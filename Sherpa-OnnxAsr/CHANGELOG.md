@@ -1,3 +1,6 @@
+## 3.1
+- **新增**：支持内嵌访问 (Added support for embedded access).
+
 ## 3.0
 - **新增**：根据模型作者要求添加预测功能 (Added prediction feature as requested by the model author).
 - **新增**：引入阿拉伯数字检测，提升数据处理精度和多样性 (Introduced Arabic numeral detection to enhance data processing accuracy and diversity).
