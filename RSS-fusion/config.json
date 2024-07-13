@@ -15,17 +15,18 @@
   },
   "map": {
     "config": {
-      "path": "$(pwd)/data",
+      "path": "/data",
       "readonly": false
     }
   },
   "options": {
-    "password": "123456"
+    "password": "123456",
+    "db_path": "/data/fusion.db"
   },
   "schema": {
     "password": "str"
   },
   "environment": {
-    "PASSWORD": "$password"
+    "PASSWORD": "123456"
   }
 }
