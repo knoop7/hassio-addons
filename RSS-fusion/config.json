@@ -15,11 +15,14 @@
   },
   "map": {
     "config": {
-      "path": "/data",
+      "path": "${PWD}/fusion:/data",
       "readonly": false
     }
   },
   "environment": {
-    "PASSWORD": "123456"
+    "PASSWORD": {
+      "description": "设置登录密码",
+      "value": "123456"
+    }
   }
 }
