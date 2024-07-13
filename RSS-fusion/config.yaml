@@ -1,0 +1,29 @@
+name: "Fusion-RSS"
+version: "0.8.2"
+slug: "fusion"
+description: "轻量级的、自托管支持 Phone 友好型 RSS 聚合器和阅读器"
+url: "https://github.com/0x2E/fusion"
+arch:
+  - "amd64"
+  - "aarch64"
+startup: "application"
+boot: "auto"
+init: false
+image: "rook1e404/fusion"
+ports:
+  "8080/tcp": 8080
+ports_description:
+  "8080/tcp": "RSS Web interface"
+map:
+  config:
+    path: "/data"
+    readonly: false
+options:
+  password: "123456"
+schema:
+  password: "str"
+environment:
+  PASSWORD: "123456"
+ingress: true
+ingress_entry: 8080
+ingress_stream: false
