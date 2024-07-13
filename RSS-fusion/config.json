@@ -32,6 +32,5 @@
   },
   "ingress": true,
   "ingress_stream": true,
-  "ingress_port": 8080,
-  "webui": "http://[HOST]:[PORT:8080]"
+  "ingress_port": 8080
 }
