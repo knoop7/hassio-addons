@@ -1,7 +1,7 @@
 {
   "name": "Sherpa-OnnxAsr",
   "version": "paraformer-2024-7-5",
-  "slug": "Sherpa-OnnxAsr",
+  "slug": "sherpa-onnx-asr",
   "description": "本地离线语音模型，占用1GB",
   "url": "https://github.com/yaming116",
   "arch": ["amd64", "aarch64"],
@@ -11,6 +11,9 @@
   "image": "yaming116/sherpa-onnx-asr",
   "ports": {
     "5001/tcp": 5001
+  },
+  "ports_description": {
+    "5001/tcp": "ASR Web interface"
   },
   "map": {
     "config": {
@@ -27,6 +30,5 @@
   },
   "ingress": true,
   "ingress_stream": true,
-  "ingress_port": 5001,
-  "webui": "http://[HOST]:[PORT:5001]"
+  "ingress_port": 5001
 }
