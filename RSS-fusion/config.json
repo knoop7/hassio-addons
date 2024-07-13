@@ -7,7 +7,7 @@
   "arch": ["amd64", "aarch64"],
   "startup": "application",
   "boot": "auto",
-  "init": true,
+  "init": false,
   "webui": "http://[HOST]:8080",
   "image": "rook1e404/fusion",
   "ports": {
@@ -20,8 +20,7 @@
     }
   },
   "options": {
-    "password": "123456",
-    "db_path": "/data/fusion.db"
+    "password": "123456"
   },
   "schema": {
     "password": "str"
