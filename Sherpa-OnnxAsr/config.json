@@ -8,7 +8,6 @@
   "startup": "application",
   "boot": "auto",
   "init": false,
-  "webui": "http://[HOST]:[PORT:5001]",
   "image": "yaming116/sherpa-onnx-asr",
   "ports": {
     "5001/tcp": 5001
