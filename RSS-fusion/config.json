@@ -4,10 +4,10 @@
   "slug": "fusion",
   "description": "轻量级的、自托管支持 Phone 友好型 RSS 聚合器和阅读器",
   "url": "https://github.com/0x2E/fusion",
-  "arch": ["amd64"， "aarch64"],
+  "arch": ["amd64, "aarch64"],
   "startup": "application",
   "boot": "auto",
-  "init": false，
+  "init": false,
   "image": "rook1e404/fusion",
   "ports": {
     "8080/tcp": 8080
