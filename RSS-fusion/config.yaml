@@ -1,19 +1,19 @@
 {
-  "name": "Sherpa-OnnxAsr",
-  "version": "paraformer-2024-7-5",
-  "slug": "sherpa-onnx-asr",
-  "description": "本地离线语音模型，占用1GB",
-  "url": "https://github.com/yaming116",
+  "name": "Fusion-RSS",
+  "version": "0.8.2",
+  "slug": "fusion",
+  "description": "轻量级的、自托管支持 Phone 友好型 RSS 聚合器和阅读器",
+  "url": "https://github.com/0x2E/fusion",
   "arch": ["amd64", "aarch64"],
   "startup": "application",
   "boot": "auto",
   "init": false,
-  "image": "yaming116/sherpa-onnx-asr",
+  "image": "rook1e404/fusion",
   "ports": {
-    "5001/tcp": 5001
+    "8080/tcp": 8080
   },
   "ports_description": {
-    "5001/tcp": "ASR Web interface"
+    "8080/tcp": "RSS Web interface"
   },
   "map": {
     "config": {
@@ -21,12 +21,14 @@
       "readonly": false
     }
   },
-  "environment": {},
   "options": {
-    "language": "zh-CN"
+    "password": "123456"
   },
   "schema": {
-    "language": "str"
+    "password": "str"
   },
-  "ingress": true,
+  "environment": {
+    "PASSWORD": "123456"
+  },
+  "ingress": true
 }
