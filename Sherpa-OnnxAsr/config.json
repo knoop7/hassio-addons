@@ -28,4 +28,5 @@
   },
   "ingress": true,
   "ingress_stream": true
+  "ingress_port": 5001
 }
