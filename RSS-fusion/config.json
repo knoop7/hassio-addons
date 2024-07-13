@@ -15,14 +15,20 @@
   },
   "map": {
     "config": {
-      "path": "${PWD}/fusion:/data",
+      "path": "/data",
       "readonly": false
     }
   },
-  "environment": {
-    "PASSWORD": {
+  "options": {
+    "password": {
       "description": "设置登录密码",
       "value": "123456"
     }
+  },
+  "schema": {
+    "password": "str"
+  },
+  "environment": {
+    "PASSWORD": "$password"
   }
 }
