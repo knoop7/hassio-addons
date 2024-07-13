@@ -21,7 +21,6 @@
   },
   "options": {
     "password": {
-      "description": "设置登录密码",
       "value": "123456"
     }
   },
