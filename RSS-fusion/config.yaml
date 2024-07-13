@@ -33,5 +33,4 @@ environment:
 
   
 ingress: true
-ingress_entry: 8080
 ingress_stream: false
