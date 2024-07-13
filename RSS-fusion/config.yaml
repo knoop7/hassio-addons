@@ -7,23 +7,31 @@ arch:
   - "amd64"
   - "aarch64"
 startup: "application"
-boot: "auto"
+boot: auto
 init: false
-image: "rook1e404/fusion"
+image: rook1e404/fusion:{version}
+
+
 ports:
   "8080/tcp": 8080
 ports_description:
   "8080/tcp": "RSS Web interface"
+  
 map:
   config:
-    path: "/data"
+    path: /data
     readonly: false
+
+
+    
 options:
   password: "123456"
 schema:
   password: "str"
 environment:
   PASSWORD: "123456"
+
+  
 ingress: true
 ingress_entry: 8080
 ingress_stream: false
