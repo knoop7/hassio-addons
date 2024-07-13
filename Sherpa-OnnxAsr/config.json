@@ -28,5 +28,6 @@
   },
   "ingress": true,
   "ingress_stream": true
-  "ingress_port": 5001
+  "ingress_port": 5001,
+  "webui": "http://[HOST]:[PORT:5001]"
 }
