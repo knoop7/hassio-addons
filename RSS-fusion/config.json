@@ -31,6 +31,5 @@
     "PASSWORD": "123456"
   },
   "ingress": true,
-  "ingress_stream": true,
-  "ingress_port": 8080
+  "ingress_entry": 8080
 }
