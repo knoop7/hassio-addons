@@ -19,11 +19,11 @@ map:
 options:
   keep_days_local: 7
   keep_days_cloud: 7
-  backup_time: 03:00:00
+  backup_time: "03:00:00"
   folder_name: "IT Commander HA Backup"
 schema:
-  keep_days_local: "int(1,30)"
-  keep_days_cloud: "int(3,30)"
+  keep_days_local: int(1,30)
+  keep_days_cloud: int(3,30)
   backup_time: str
   folder_name: str
-image: "ghcr.io/5high/{arch}-addon-aliyun-backup"
+image: "ghcr.io/knoop347/aliyun-backup/{arch}-addon-aliyun-backup"
