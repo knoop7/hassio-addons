@@ -1,0 +1,29 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: 阿里云盘自动备份/Aliyun Drive Backup
+version: "1.0.12"
+slug: aliyun_backup
+description: AliyunDrive Backup
+url: "https://sumju.net"
+arch:
+  - aarch64
+  - amd64
+init: false
+hassio_api: true
+hassio_role: backup
+ingress: true
+panel_icon: "mdi:cloud"
+panel_title: "CN-Backups"
+map:
+  - backup:rw
+  - ssl
+options:
+  keep_days_local: 7
+  keep_days_cloud: 7
+  backup_time: 03:00:00
+  folder_name: "IT Commander HA Backup"
+schema:
+  keep_days_local: "int(1,30)"
+  keep_days_cloud: "int(3,30)"
+  backup_time: str
+  folder_name: str
+image: "ghcr.io/5high/{arch}-addon-aliyun-backup"
