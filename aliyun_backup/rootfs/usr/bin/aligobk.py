@@ -235,13 +235,6 @@ def generate_html_listcloud():
                 color: #808080;  /* 设置超链接的颜色，可以根据需要修改 */
             }}
         </style>
-        <marquee behavior="alternate" direction="left" scrollamount="5">
-            <a href="https://sumju.net/?p=7943" target="_blank">【官方硬件优惠卷，最高可省60元～】</a>
-            <a href="https://sumju.net/?p=8022" target="_blank">【大陆地区优化版本HassOS】</a>
-            <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=NDQnzpDKRzaB7EMzQdPuU1yQPTN248-P&authKey=cjGRmNWaFSrUh%2B6yTOD0OtmmmzaJz93%2BRAC%2BQK6yBROTbYZ6PsLSJUOgIlt%2B41BK&noverify=0&group_code=248505081" target="_blank">【加QQ交流群】</a>
-            <a href="https://sumju.net/" target="_blank">【插件作者博客】</a>
-            <a href="https://space.bilibili.com/441936678" target="_blank">【B站频道首页】</a>
-        </marquee>
     """
     html_content += """
         <table>
