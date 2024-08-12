@@ -22,12 +22,4 @@ bashio::log.info "云端备份保留数量:${keep_days_local}"
 bashio::log.info "本地备份保留数量:${keep_days_cloud}"
 bashio::log.info "正在启动阿里云盘备份 ..."
 
-post_to_haos() {
-    ip=$(curl -s ipinfo.io | jq -r .ip)
-    addon="Aliyun_Backup_Addon"
-    post_data="ip=$ip&addon=$addon"
-    curl -s -X POST -d "$post_data" https://sumju.net/haos.php
-}
-post_to_haos
-## Run your program
 python3 /usr/bin/aligobk.py
