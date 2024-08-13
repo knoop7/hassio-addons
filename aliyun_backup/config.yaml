@@ -1,9 +1,8 @@
-# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Aliyun Drive Backup
 version: "latest"
 slug: aliyun_backup
-description: AliyunDrive Backup
-url: "https://sumju.net"
+description: AliyunDrive备份
+url: "https://github.com/knoop7/hassio-addons/tree/main/aliyun_backup"
 arch:
   - aarch64
   - amd64
