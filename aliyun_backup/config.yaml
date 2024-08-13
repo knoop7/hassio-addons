@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Aliyun Drive Backup
-version: "1.0.12"
+version: "latest"
 slug: aliyun_backup
 description: AliyunDrive Backup
 url: "https://sumju.net"
@@ -26,4 +26,4 @@ schema:
   keep_days_cloud: int(3,30)
   backup_time: str
   folder_name: str
-image: "ghcr.io/knoop347/aliyun-backup/{arch}-addon-aliyun-backup"
+image: " ghcr.io/knoop7/aligobk"
