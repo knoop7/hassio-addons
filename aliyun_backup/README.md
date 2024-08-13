@@ -1,4 +1,4 @@
-## Home Assistant Add-on: Aliyun Drive Daily Backup
+## Home Assistant Add-on ：Aliyun Drive Daily Backup
 
 **首次登录**：首次使用插件时，需要访问 `http://IP:8099` 进行扫码登录，以授权阿里云盘访问。之后，可以直接使用加载项进行备份。
 
