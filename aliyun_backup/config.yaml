@@ -10,6 +10,7 @@ init: false
 hassio_api: true
 hassio_role: backup
 ingress: true
+host_network: true  
 panel_icon: "mdi:cloud"
 panel_title: "CN-Backups"
 map:
@@ -19,7 +20,7 @@ options:
   keep_days_local: 7
   keep_days_cloud: 7
   backup_time: "03:00:00"
-  folder_name: "IT Commander HA Backup"
+  folder_name: "HA Backup"
 schema:
   keep_days_local: int(1,30)
   keep_days_cloud: int(3,30)
