@@ -28,4 +28,4 @@ schema:
   keep_days_cloud: int(3,30)
   backup_time: str
   folder_name: str
-image: "ghcr.io/knoop7/aligobk-{arch}"
+image: "ghcr.io/knoop7/aligobk"
