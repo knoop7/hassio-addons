@@ -1,7 +1,7 @@
-name: Aliyun Drive Backup
+name: aliyun Drive Backup
 version: "latest"
 slug: aliyun_backup
-description: AliyunDrive备份
+description: 阿里云盘｜国内加速备份System
 url: "https://github.com/knoop7/hassio-addons/tree/main/aliyun_backup"
 arch:
   - aarch64
