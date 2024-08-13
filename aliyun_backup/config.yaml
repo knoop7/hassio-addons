@@ -16,6 +16,8 @@ panel_title: "CN-Backups"
 map:
   - backup:rw
   - ssl
+ports:
+  8099/tcp: 8099 
 options:
   keep_days_local: 7
   keep_days_cloud: 7
