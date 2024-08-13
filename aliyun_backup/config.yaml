@@ -1,0 +1,31 @@
+name: Aliyun Drive Backup
+version: "latest"
+slug: aliyun_backup
+description: AliyunDrive备份
+url: "https://github.com/knoop7/hassio-addons/tree/main/aliyun_backup"
+arch:
+  - aarch64
+  - amd64
+init: false
+hassio_api: true
+hassio_role: backup
+ingress: true
+host_network: true  
+panel_icon: "mdi:cloud"
+panel_title: "CN-Backups"
+map:
+  - backup:rw
+  - ssl
+ports:
+  8099/tcp: 8099 
+options:
+  keep_days_local: 7
+  keep_days_cloud: 7
+  backup_time: "03:00:00"
+  folder_name: "HA Backup"
+schema:
+  keep_days_local: int(1,30)
+  keep_days_cloud: int(3,30)
+  backup_time: str
+  folder_name: str
+image: "ghcr.io/knoop7/aligobk"
