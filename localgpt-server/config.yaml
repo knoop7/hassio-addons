@@ -8,6 +8,7 @@ arch:
   - amd64
 init: false
 network_mode: bridge
+webui: http://[HOST]:[PORT:4567]
 ports:
   "8080/tcp": 4567
 ports_description:
@@ -16,6 +17,4 @@ schema:
   proxy_url: str
 image: "ghcr.io/aurora-develop/duck2api"
 options:
-  proxy_url: "http://IP:8899"
-environment:
-  PROXY_URL: "{{ options.proxy_url }}"
+  proxy_url: "http://ip:port"
