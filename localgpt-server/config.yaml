@@ -1,6 +1,7 @@
 name: LocalGPT server
 version: "latest"
 slug: localgpt_server
+description: 本地化接口
 url: "https://github.com/knoop7"
 arch:
   - aarch64
