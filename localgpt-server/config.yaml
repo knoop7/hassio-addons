@@ -8,7 +8,7 @@ arch:
   - amd64
 init: false
 network_mode: bridge
-webui: http://[HOST]:[PORT:4567]
+webui: "http://[HOST]:[PORT:4567]"
 ports:
   "8080/tcp": 4567
 ports_description:
@@ -17,4 +17,5 @@ schema:
   proxy_url: str
 image: "ghcr.io/aurora-develop/duck2api"
 options:
-  proxy_url: "http://ip:port"
+  proxy_url: "http://192.168.0.185:8899"
+entrypoint: ["/bin/bash", "docker-entrypoint.sh"]
