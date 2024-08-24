@@ -8,13 +8,13 @@ arch:
   - amd64
 init: false
 ingress: true
-network_mode: bridge
+network_mode: host
 panel_icon: "mdi:head-dots-horizontal"
-panel_title: "localGPT-server"
+panel_title: "localgpt-server"
 ports:
   "8080/tcp": 4567
 schema:
   proxy_url: str
 image: "ghcr.io/aurora-develop/duck2api"
 environment:
-  PROXY_URL: "${proxy_url}"
+  PROXY_URL: "$(proxy_url)"
