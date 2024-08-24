@@ -20,4 +20,4 @@ schema:
   proxy_url: str
 image: "ghcr.io/aurora-develop/duck2api"
 environment:
-  - PROXY_URL={{ options.proxy_url }}
+  - PROXY_URL="$proxy_url"
