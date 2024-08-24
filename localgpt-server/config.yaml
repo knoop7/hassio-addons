@@ -8,7 +8,7 @@ arch:
   - amd64
 init: false
 ingress: true
-host_network: true  
+network_mode: bridge
 panel_icon: "mdi:head-dots-horizontal"
 panel_title: "localGPT-server"
 ports:
