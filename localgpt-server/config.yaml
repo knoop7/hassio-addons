@@ -1,7 +1,6 @@
 name: LocalGPT server
 version: "latest"
 slug: localgpt_server
-description: GPT
 url: "https://github.com/knoop7"
 arch:
   - aarch64
@@ -13,11 +12,9 @@ host_network: true
 panel_icon: "mdi:head-dots-horizontal"
 panel_title: "localGPT-server"
 ports:
-  8080/tcp: 4567 
-options:
-  proxy_url: "http://192.168.0.185:8899"
+  "4567/tcp": 8080
 schema:
   proxy_url: str
 image: "ghcr.io/aurora-develop/duck2api"
 environment:
-  - PROXY_URL="$proxy_url"
+  PROXY_URL: "$proxy_url"
