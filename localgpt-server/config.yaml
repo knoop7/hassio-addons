@@ -14,9 +14,12 @@ ports:
 ports_description:
   "4567/tcp": "GPT Web interface"
 schema:
-  proxy_url: str
+  proxy_url:
+    type: str
+    required: true
+    default: "http://192.168.0.185:8899"
 image: "ghcr.io/aurora-develop/duck2api"
 options:
   proxy_url: "http://192.168.0.185:8899"
 environment:
-  PROXY_URL: "!secret proxy_url"
+  PROXY_URL: "{options.proxy_url}"  
