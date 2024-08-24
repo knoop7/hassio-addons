@@ -1,4 +1,4 @@
-name: LocalGPT Server
+name: LocalGPT server
 version: "latest"
 slug: localgpt_server
 description: 本地化GPT接口
@@ -14,7 +14,10 @@ ports:
 ports_description:
   "4567/tcp": "GPT Web interface"
 schema:
-  proxy_url: "http://192.168.0.185:8899"
+  proxy_url:
+    type: str
+    required: true
+    default: "http://192.168.0.185:8899"
 image: "ghcr.io/aurora-develop/duck2api"
 environment:
-  PROXY_URL: "${proxy_url}"
+  PROXY_URL: "http://192.168.0.185:8899"
