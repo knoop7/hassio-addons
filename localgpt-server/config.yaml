@@ -17,7 +17,7 @@ schema:
   proxy_url:
     type: str
     required: true
-    default: "192.168.0.185:8899"
+    default: "http://192.168.0.185:8899"
 image: "ghcr.io/aurora-develop/duck2api"
 environment:
-  PROXY_URL: "http://{proxy_url}"  
+  PROXY_URL: "${proxy_url}"
