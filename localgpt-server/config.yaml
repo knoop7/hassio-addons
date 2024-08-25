@@ -42,4 +42,4 @@ options:
   tls_key: ""
 map:
   - "data:/data/options.json"
-image: "ghcr.io/knoop7/gptapi:20240825"
+image: "ghcr.io/knoop7/gptapi"
