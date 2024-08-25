@@ -1,0 +1,29 @@
+name: LocalGPT server
+version: "20240825"
+slug: localgpt_server
+description: 本地化GPT接口
+url: "https://github.com/knoop7"
+arch:
+  - aarch64
+  - amd64
+init: false
+network_mode: bridge
+webui: "http://[HOST]:[PORT:4567]/web"
+ports:
+  "4567/tcp": 4567
+ports_description:
+  "4567/tcp": "GPT Web interface"
+schema:
+  proxy_url: str
+  server_host: str
+  server_port: str
+  tls_cert: str
+  tls_key: str
+options:
+  proxy_url: "http://192.168.0.185:8899"
+  server_host: "0.0.0.0"
+  server_port: "4567"
+  tls_cert: ""
+  tls_key: ""
+image: "ghcr.io/knoop7/gptapi"
+
