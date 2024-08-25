@@ -20,7 +20,7 @@ schema:
   tls_cert: str
   tls_key: str
 options:
-  proxy_url: "http://192.168.0.185:8899"
+  proxy_url: ""
   server_host: "0.0.0.0"
   server_port: "4567"
   tls_cert: ""
