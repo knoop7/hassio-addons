@@ -25,6 +25,5 @@ options:
   server_port: ""
   tls_cert: ""
   tls_key: ""
-map:
-  - data: /data/options.json
+map: "config:rw"
 image: "ghcr.io/knoop7/gptapi"
