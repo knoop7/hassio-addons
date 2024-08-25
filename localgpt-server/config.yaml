@@ -26,5 +26,5 @@ options:
   tls_cert: ""
   tls_key: ""
 map:
-  - "data:/data/options.json"
+  - data: /data/options.json
 image: "ghcr.io/knoop7/gptapi"
