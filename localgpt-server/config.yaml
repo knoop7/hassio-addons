@@ -14,26 +14,11 @@ ports:
 ports_description:
   "4567/tcp": "GPT Web interface"
 schema:
-  proxy_url:
-    type: str
-    description: "Proxy URL"
-    required: false
-  server_host:
-    type: str
-    description: "Server host"
-    required: false
-  server_port:
-    type: str
-    description: "Server port"
-    required: false
-  tls_cert:
-    type: str
-    description: "TLS certificate path"
-    required: false
-  tls_key:
-    type: str
-    description: "TLS key path"
-    required: false
+  proxy_url: str
+  server_host: str
+  server_port: str
+  tls_cert: str
+  tls_key: str
 options:
   proxy_url: ""
   server_host: ""
