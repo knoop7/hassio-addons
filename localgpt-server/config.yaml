@@ -16,23 +16,18 @@ ports_description:
 schema:
   proxy_url:
     type: str
-    description: "代理服务器URL"
     required: false
   server_host:
     type: str
-    description: "服务器主机"
     required: false
   server_port:
     type: str
-    description: "服务器端口"
     required: false
   tls_cert:
     type: str
-    description: "TLS 证书路径"
     required: false
   tls_key:
     type: str
-    description: "TLS 密钥路径"
     required: false
 options:
   proxy_url: ""
