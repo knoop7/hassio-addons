@@ -14,7 +14,7 @@ ports:
 ports_description:
   "4567/tcp": "GPT Web interface"
 schema:
-  proxy_url: str
+  proxy_url: str?
 options:
   proxy_url: "http://192.168.0.185:8899"
 map:
