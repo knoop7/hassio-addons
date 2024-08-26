@@ -1,5 +1,5 @@
 name: LocalGPT server
-version: "20240825"
+version: "2024-8-26"
 slug: localgpt_server
 description: 本地化GPT接口
 url: "https://github.com/knoop7"
@@ -10,13 +10,13 @@ init: false
 network_mode: bridge
 webui: "http://[HOST]:[PORT:4567]/web"
 ports:
-  "4567/tcp": 4567
+  "8080/tcp": 4567
 ports_description:
-  "4567/tcp": "GPT Web interface"
+  "8080/tcp": "GPT Web interface"
 schema:
   proxy_url: str?
 options:
   proxy_url: "http://192.168.0.185:8899"
-image: "ghcr.io/knoop7/gptapi"
+image: "yaming116/gptapi"
 map:
   - config:rw
