@@ -1,5 +1,5 @@
 name: LocalGPT server
-version: "20240825"
+version: "2024-8-26"
 slug: localgpt_server
 description: 本地化GPT接口
 url: "https://github.com/knoop7"
@@ -19,4 +19,4 @@ options:
   proxy_url: "http://192.168.0.185:8899"
 map:
   - config:rw
-image: "ghcr.io/knoop7/gptapi"
+image: "yaming116/gptapi"
