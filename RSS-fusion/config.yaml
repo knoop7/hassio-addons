@@ -18,27 +18,17 @@ map:
 volumes:
   - ./data:/data
 options:
-  host: "0.0.0.0"
-  port: 8080
-  password: "fusion"
+  password: "rss123456"
   db: "fusion.db"
   secure_cookie: false
-  tls_cert: ""
-  tls_key: ""
 schema:
   host: str
   port: int
   password: str
   db: str
   secure_cookie: bool
-  tls_cert: str
-  tls_key: str
 environment:
-  HOST: 0.0.0.0
-  PORT: 8080
-  PASSWORD: fusion
+  PASSWORD: rss123456
   DB: fusion.db
   SECURE_COOKIE: false
-  TLS_CERT: ""
-  TLS_KEY: ""
 ingress: false
