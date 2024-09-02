@@ -8,12 +8,13 @@ arch:
   - aarch64
 startup: application
 init: false
-hassio_api: true
 image: rook1e404/fusion
-ingress: true
-host_network: true  
+network_mode: bridge
+webui: "http://[HOST]:[PORT:7077]"
 ports:
   "8080/tcp": 7077
+ports_description:
+  "7077/tcp": "RSS Web interface"
 map:
   config:
     path: /data
