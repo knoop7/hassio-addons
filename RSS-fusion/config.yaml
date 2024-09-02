@@ -19,10 +19,30 @@ map:
   config:
     path: /data
     readonly: false
+volumes:
+  - ./data:/data
 options:
-  password: rss123456
+  host: "0.0.0.0"
+  port: 7077
+  password: "fusion"
+  db: "fusion.db"
+  secure_cookie: false
+  tls_cert: ""
+  tls_key: ""
 schema:
+  host: str
+  port: int
   password: str
+  db: str
+  secure_cookie: bool
+  tls_cert: str
+  tls_key: str
 environment:
-  PASSWORD: rss123456
+  HOST: !secret host
+  PORT: !secret port
+  PASSWORD: !secret password
+  DB: !secret db
+  SECURE_COOKIE: !secret secure_cookie
+  TLS_CERT: !secret tls_cert
+  TLS_KEY: !secret tls_key
 ingress: false
