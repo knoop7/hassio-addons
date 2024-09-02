@@ -13,8 +13,7 @@ image: rook1e404/fusion
 ingress: true
 host_network: true  
 ports:
-  "7077/tcp": 8080
-
+  "8080/tcp": 7077
 map:
   config:
     path: /data
