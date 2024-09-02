@@ -9,7 +9,7 @@ arch:
 startup: application
 init: false
 image: rook1e404/fusion
-network_mode: bridge
+network_mode: host
 webui: "http://[HOST]:[PORT:7077]"
 ports:
   "8080/tcp": 7077
@@ -25,4 +25,4 @@ schema:
   password: str
 environment:
   PASSWORD: rss123456
-ingress: true
+ingress: false
