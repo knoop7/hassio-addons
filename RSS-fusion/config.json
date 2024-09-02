@@ -1,6 +1,6 @@
 {
   "name": "Fusion-RSS",
-  "version": "0.8.2",
+  "version": "0.8.8",
   "slug": "fusion",
   "description": "轻量级的、自托管支持 Phone 友好型 RSS 聚合器和阅读器",
   "url": "https://github.com/0x2E/fusion",
@@ -23,13 +23,13 @@
     }
   },
   "options": {
-    "password": "123456"
+    "password": "rss123456"
   },
   "schema": {
     "password": "str"
   },
   "environment": {
-    "PASSWORD": "123456"
+    "PASSWORD": "rss123456"
   },
   "ingress": true
 }
