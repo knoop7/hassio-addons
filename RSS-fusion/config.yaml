@@ -9,7 +9,6 @@ arch:
 startup: application
 init: false
 image: rook1e404/fusion
-network_mode: host
 webui: "http://[HOST]:[PORT:8080]"
 map:
   config:
