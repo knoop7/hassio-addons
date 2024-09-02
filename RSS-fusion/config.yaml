@@ -10,11 +10,7 @@ startup: application
 init: false
 image: rook1e404/fusion
 network_mode: host
-webui: "http://[HOST]:[PORT:7077]"
-ports:
-  "8080/tcp": 7077
-ports_description:
-  "7077/tcp": "RSS Web interface"
+webui: "http://[HOST]:[PORT:8080]"
 map:
   config:
     path: /data
@@ -23,7 +19,7 @@ volumes:
   - ./data:/data
 options:
   host: "0.0.0.0"
-  port: 7077
+  port: 8080
   password: "fusion"
   db: "fusion.db"
   secure_cookie: false
@@ -38,11 +34,11 @@ schema:
   tls_cert: str
   tls_key: str
 environment:
-  HOST: !secret host
-  PORT: !secret port
-  PASSWORD: !secret password
-  DB: !secret db
-  SECURE_COOKIE: !secret secure_cookie
-  TLS_CERT: !secret tls_cert
-  TLS_KEY: !secret tls_key
+  HOST: 0.0.0.0
+  PORT: 8080
+  PASSWORD: fusion
+  DB: fusion.db
+  SECURE_COOKIE: false
+  TLS_CERT: ""
+  TLS_KEY: ""
 ingress: false
