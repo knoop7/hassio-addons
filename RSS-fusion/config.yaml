@@ -19,11 +19,8 @@ volumes:
   - ./data:/data
 options:
   password: "rss123456"
-  db: "fusion.db"
   secure_cookie: false
 schema:
-  host: str
-  port: int
   password: str
   db: str
   secure_cookie: bool
