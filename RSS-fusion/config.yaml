@@ -10,7 +10,8 @@ startup: application
 boot: auto
 init: false
 image: rook1e404/fusion
-webui: http://[HOST]:[PORT:7077]
+ingress: true
+host_network: true  
 ports:
   "7077/tcp": 8080
 ports_description:
