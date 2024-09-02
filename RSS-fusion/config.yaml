@@ -23,6 +23,6 @@ schema:
   password: str
   secure_cookie: bool
 environment:
-  PASSWORD: "{password}"
+  PASSWORD: rss123456
   DB: fusion.db
 ingress: false
