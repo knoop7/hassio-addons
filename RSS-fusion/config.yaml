@@ -30,5 +30,4 @@ schema:
 environment:
   PASSWORD: rss123456
   DB: fusion.db
-  SECURE_COOKIE: false
 ingress: false
