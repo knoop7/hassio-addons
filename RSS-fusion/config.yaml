@@ -23,6 +23,6 @@ schema:
   password: str
   secure_cookie: bool
 environment:
-  PASSWORD: !secret password
+  PASSWORD: "{password}"
   DB: fusion.db
 ingress: false
