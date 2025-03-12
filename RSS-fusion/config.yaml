@@ -31,11 +31,11 @@ schema:
   tls_cert: str?
   tls_key: str?
 environment:
-  PASSWORD: "option|password"
-  SECURE_COOKIE: "option|secure_cookie"
-  HOST: "option|host"
-  PORT: "option|port"
+  PASSWORD: "rss123456"
+  SECURE_COOKIE: false
+  HOST: "0.0.0.0"
+  PORT: 8080
   DB: "fusion.db"
-  TLS_CERT: "option|tls_cert"
-  TLS_KEY: "option|tls_key"
+  TLS_CERT: ""
+  TLS_KEY: ""
 ingress: false
