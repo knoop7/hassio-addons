@@ -1,5 +1,5 @@
 name: Fusion-RSS
-version: "0.9.0"
+version: "0.9.0-beta1"
 slug: fusion
 description: 轻量级的、自托管支持 Phone 友好型 RSS 聚合器和阅读器，全新 UI 界面
 url: https://github.com/0x2E/fusion
