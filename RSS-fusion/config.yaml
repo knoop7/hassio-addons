@@ -21,8 +21,6 @@ options:
   secure_cookie: false
   host: "0.0.0.0"
   port: 8080
-  tls_cert: ""
-  tls_key: ""
 schema:
   password: str
   secure_cookie: bool
@@ -31,11 +29,9 @@ schema:
   tls_cert: str?
   tls_key: str?
 environment:
-  PASSWORD: "rss123456"
-  SECURE_COOKIE: false
+  password: "rss123456"
+  secure_cookie: false
   HOST: "0.0.0.0"
   PORT: 8080
   DB: "fusion.db"
-  TLS_CERT: ""
-  TLS_KEY: ""
 ingress: false
