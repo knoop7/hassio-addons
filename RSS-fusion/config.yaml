@@ -1,7 +1,7 @@
 name: Fusion-RSS
-version: "0.8.8"
+version: "0.9.0"
 slug: fusion
-description: 轻量级的、自托管支持 Phone 友好型 RSS 聚合器和阅读器
+description: 轻量级的、自托管支持 Phone 友好型 RSS 聚合器和阅读器，全新 UI 界面
 url: https://github.com/0x2E/fusion
 arch:
   - amd64
@@ -13,16 +13,29 @@ webui: "http://[HOST]:[PORT:8080]"
 ports:
   "8080/tcp": 8080
 ports_description:
-  "8080/tcp": RSS Web interface
+  "8080/tcp": RSS Web 界面
 volumes:
   - ./data:/data
 options:
   password: "rss123456"
   secure_cookie: false
+  host: "0.0.0.0"
+  port: 8080
+  tls_cert: ""
+  tls_key: ""
 schema:
   password: str
   secure_cookie: bool
+  host: str?
+  port: port?
+  tls_cert: str?
+  tls_key: str?
 environment:
-  PASSWORD: rss123456
-  DB: fusion.db
+  PASSWORD: "option|password"
+  SECURE_COOKIE: "option|secure_cookie"
+  HOST: "option|host"
+  PORT: "option|port"
+  DB: "fusion.db"
+  TLS_CERT: "option|tls_cert"
+  TLS_KEY: "option|tls_key"
 ingress: false
