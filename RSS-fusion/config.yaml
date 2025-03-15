@@ -1,5 +1,5 @@
 name: Fusion-RSS
-version: "0.9.0-beta1"
+version: "0.9.0"
 slug: fusion
 description: 轻量级的、自托管支持 Phone 友好型 RSS 聚合器和阅读器，全新 UI 界面
 url: https://github.com/0x2E/fusion
@@ -15,7 +15,7 @@ ports:
 ports_description:
   "8080/tcp": RSS Web 界面
 volumes:
-  - ./data:/data
+  - ./data:/data  # 数据持久化目录，数据库默认存储于此
 options:
   password: "rss123456"
   secure_cookie: false
@@ -23,19 +23,26 @@ options:
   port: 8080
   tls_cert: ""
   tls_key: ""
+    description: "可选的 TLS 密钥路径，与证书配合启用安全的加密连接"
 schema:
   password: str
+    description: "设置访问 Fusion-RSS 的安全密码，用于保护你的 RSS 界面"
   secure_cookie: bool
+    description: "是否启用安全的 Cookie 模式，提升会话的安全性"
   host: str?
+    description: "可选的主机地址，定义服务监听的网络接口，默认全网可访问"
   port: port?
+    description: "可选的端口号，指定 Web 界面的访问端口，灵活适配你的网络环境"
   tls_cert: str?
+    description: "可选的 TLS 证书路径，支持 HTTPS 加密访问，确保数据传输安全"
   tls_key: str?
+    description: "可选的 TLS 密钥路径，与证书配合启用安全的加密连接"
 environment:
   PASSWORD: "rss123456"
   SECURE_COOKIE: "false"
   HOST: "0.0.0.0"
   PORT: "8080"
-  DB: "fusion.db"
+  DB: "/data/fusion.db"  # 数据库存储在 /data 下，与 volumes 映射一致
   TLS_CERT: ""
   TLS_KEY: ""
 ingress: false
