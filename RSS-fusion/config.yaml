@@ -1,6 +1,3 @@
-# Fusion RSS - Home Assistant Add-on 配置
-# 官方仓库: https://github.com/0x2E/fusion
-
 name: Fusion-RSS
 version: "main"
 slug: fusion
@@ -12,35 +9,29 @@ arch:
 startup: application
 init: false
 
-# 官方镜像 - main = 最新开发版，latest = 最新正式版
-image: ghcr.io/0x2e/fusion:main
+# 镜像不带标签！version 字段就是标签
+image: ghcr.io/0x2e/fusion
 
-# Web UI（外部访问）
 webui: "http://[HOST]:[PORT:4123]"
 
-# 端口映射：外部 4123 → 内部 8080
 ports:
   8080/tcp: 4123
 ports_description:
   8080/tcp: RSS Web 界面
 
-# 数据持久化
 volumes:
   - data:/data
 
-# Ingress 配置（HA 内部访问）
 ingress: true
 ingress_port: 8080
 ingress_entry: /
 
-# 默认配置
 options:
   password: "fusion"
 
 schema:
   password: str
 
-# 环境变量
 environment:
   FUSION_PASSWORD: "fusion"
   FUSION_PORT: "8080"
